@@ -79,7 +79,7 @@ public:
   void insertBefore(int value, int idx) {
     assert(idx <= m_length && idx >= 0);
 
-    int* data{new int[static_cast<std::size_t>(m_length)]};
+    int* data{new int[static_cast<std::size_t>(m_length + 1)]};
 
     std::copy_n(m_data, idx, data);
 
